@@ -5,6 +5,7 @@ import dislike from '../assets/dislike.svg';
 import './Main.css'
 import api from '../services/Api';
 import {Link} from 'react-router-dom';
+
 export default function Main({ match }) {
     const [users, setUsers] = useState([]);
 
@@ -49,12 +50,12 @@ export default function Main({ match }) {
                             <p>{user.bio}</p>
                         </footer>
 
-                        <div className="buttons">
-                            <button type="button" onClick={()=> handleLike(user._id)}>
-                                <img src={like} alt="Like" />
-                            </button>
+                        <div className="buttons">                           
                             <button type="button" onClick={()=> handleDislike(user._id)}>
                                 <img src={dislike} alt="Dislike" />
+                            </button>
+                            <button type="button" onClick={()=> handleLike(user._id)}>
+                                <img src={like} alt="Like" />
                             </button>
                         </div>
                     </li>

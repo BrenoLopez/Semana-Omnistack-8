@@ -50,7 +50,7 @@
     height: 50px;
     box-shadow: 0 2px 0 2px 0 rgba(0, 0, 0, 0.05);
     border: 0;
-    border-radius: 4px;
+    border-radius: 20px;
     background: #fff;
     cursor: pointer;
 }
